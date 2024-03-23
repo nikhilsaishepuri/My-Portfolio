@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9b62e1557c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3><span>P</span>ortfolio</h3>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="head-text">
+                    <h1>Hi, I'm <span>Nikhil sai</span> <br>from Hyderabad</h1>
+                    <a type="button" class="btn" href=""><strong>Download CV</strong></a>
+                </div>
+                <div class="head-img">
+                    <img class="image" src="/Images/1000062452-removebg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------About-->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a computer science graduate with a Bachelor of Technology, specializing in front-end development, and proficient in AWS services. Successfully completed intensive AWS Cloud Practitioner training from Edu Bridge. Strong in design and integration with intuitive 
+                        problem-solving skills. I gained a lot of knowledge by solving different problems. I am looking 
+                        to start my career as a software engineer with a reputed firm driven by technology. Passionate 
+                        about creating user-friendly experiences and open to exciting tech opportunities.
+                        
+                    </p>
+                </div>
+                <div class="about-col-2">
+                    <div class="tab-title">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                        <div class="tab-links" onclick="opentab('certification')">Certification</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>C, C++ through OOPS and Java(intermediate)</li>
+                            <li><span>Database</span><br> MYSQL</li>
+                            <li><span>Web technologies</span><br> HTML, CSS and JavaScript</li>
+                            <li><span>Platforms</span><br> Windows and Linux</li>
+                            <li><span>AWS Services</span><br>Cloud Practitioner &nbsp; &nbsp; <a href="/Images/aws.png" class="certificate-link view">view services</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Keshav Memorial Institute of technology</span><br>Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE)<br> Narayanguda, Hyderabad. <br> Aug 2019 - Jul 2023</li>
+                            <li><span>Sanjay Gandhi Memorial Government Polytechnic College</span><br>Diploma in Computer Engineering (CME) <br>Abdullapurmet, Telangana <br> Jun 2016 - Jun 2019 </li>
+                            <li><span>ZP High School</span><br>Board of Secondary Education (SSC) <br>Veliminedu, Telangana <br>Year of Passing: 2016</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents certificate" id="certification">
+                        <ul>
+                            <li><span> NPTEL</span><br>Introduction to Research &nbsp; &nbsp; <a href="/Images/NPTEL Introduction to Research.jpeg" class="certificate-link view">view certificate</a> <br> Data Science for Engineers &nbsp; &nbsp; <a href="/Images/NPTEL Data Science for Engineers.jpeg" class="certificate-link view ">view certificate</a><br> Social Networks &nbsp; &nbsp; <a href="/Images/NPTEL Social Networks.jpeg" class="certificate-link view">view certificate</a></li>
+                            <li><span>Android Application Development</span><br>Training on Building an Android Application &nbsp; &nbsp; <a href="/Images/SP Technologies.jpeg" class="certificate-link view">view certificate</a><br></li>
+                            <li><span>AWS Cloud Practitioner training</span><br>from EduBridge &nbsp; &nbsp; <a href="/Images/EBEON1223854480-1.png" class="certificate-link view">view certificate</a> </li>
+                        </ul>
+                    </div>
+                    <div id="certificateModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="certificateImage">
+                        <div id="certificatePdfContainer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------Projects-->
+
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1> 
+        <div class="project-list">
+            <div class="proj">
+                <img src="/Images/feed your buds.jpg" alt="">
+                <div class="text">Feed Your Buds</div>
+                <div class="layer">
+                    <h2>Feed Your Buds</h2>
+                    <p>FeedYourBuds is a website where customers can order freshly baked goods and have them 
+                    delivered to their doorstep. The bakery typically offers a range of products such as cakes, 
+                    pastries, bread, and cookies. Customers can browse the selection, place their order, and 
+                    make payment online. </p>
+                </div>
+            </div>
+            <div class="proj">
+                <img src="/Images/vehicle.jpg" alt="">
+                <div class="text">Vehicle Rental</div>
+                <div class="layer">
+                    <h2>Vehicle Rental</h2>
+                    <p>Vehicle Rental Website is an online platform where users can book and rent vehicles for a 
+                        specific period, with features such as vehicle selection, pick-up and drop-off location 
+                        selection, and pricing information. </p>
+                </div>
+            </div>
+            <div class="proj">
+                <img src="/Images/bakery.jpg" alt="">
+                <div class="text">Bakery Shop</div>
+                <div class="layer">
+                    <h2>Bakery Shop</h2>
+                    <p>The bakery typically offers a range of products such as cakes, 
+                        pastries, bread, and cookies. Customers can browse the selection, place their order, and 
+                        make payment online. 
+                        </p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!------Contact-------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact me</h2>
+                <p><a href="mailto:nikhilsaishepuri@gmail.com"><img src="/Images/mail.webp" alt="">nikhilsaishepuri@gmail.com</a></p>
+                <p><a href="tel:7659831448"><img src="/Images/call.webp" alt="">7659831448</a></p>
+                <div class="social-icons">  
+                    <a href="https://wa.me/7659831448"><img src="/Images/whatsapp.webp" alt=""></a>
+                    <a href="https://www.linkedin.com/in/shepuri-nikhil-sai-2b844318b"><img src="/Images/in.png" alt=""></a>
+                    <a href="https://www.credly.com/users/shepuri-nikhil-sai"><img src="/Images/credly.svg" alt=""></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="2" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById(cert).addEventListener("click",function(){
+        document.querySelector(".popup").style.display="flex";
+    })
+</script>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemen =document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemen.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemen.style.right="-200px";
+        }
+    </script>
+
+    <script>
+        var modal = document.getElementById("certificateModal");
+
+        var img = document.getElementById("certificateImage");
+        var pdfContainer = document.getElementById("certificatePdfContainer");
+
+
+        var span = document.getElementsByClassName("close")[0];
+
+        var certificateLinks = document.getElementsByClassName("certificate-link");
+        for (var i = 0; i < certificateLinks.length; i++) {
+            certificateLinks[i].addEventListener("click", function(event) {
+            event.preventDefault();
+            var certificateUrl = this.getAttribute("href");
+            if (certificateUrl.endsWith(".pdf")) {
+                pdfContainer.innerHTML = '<object data="' + certificateUrl + '" type="application/pdf" width="100%" height="100%"></object>';
+            } else {
+                img.src = certificateUrl;
+                pdfContainer.innerHTML = "";
+            }
+            modal.style.display = "block";
+        });
+        }
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>
