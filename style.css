@@ -328,6 +328,7 @@ nav ul li a:hover::after{
 
 /*Contact*/
 #Contact{
+    margin: 100px 10px;
     height: 70vh;
 }
 .contact-left{
