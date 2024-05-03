@@ -24,7 +24,7 @@
             <div class="header-text">
                 <div class="head-text">
                     <h1>Hi, I'm Nikhil sai</h1>
-                    <h1>And I'm <span>Front-end Developer</span></h1>
+                    <h1>And I'm <span id="typing-animation"></span></h1>
                     <a type="button" class="btn" href="Images/Nikhil sai CV.pdf">Download CV</a>
                     <div class="credly">
                        <img src="Images/aws-cloud-quest-cloud-practitioner (1).png" alt="">
@@ -33,7 +33,9 @@
                     </div>
                 </div>
                 <div class="head-img">
-                    <img class="image" src="Images/3.JPG" alt="">
+                    <div class="fhalf"></div>
+                    <div class="shalf"></div>
+                    <img class="img" src="Images/3.JPG" alt="">
                     <audio src="Images/[iSongs.info] 01 - Enduko Emo.mp3" id="audio" loop></audio>
                 </div>
             </div>
@@ -157,6 +159,34 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    // Initialize the typing animation
+    const typingAnimationElement = document.getElementById('typing-animation');
+
+    // Create an array of typing text
+    const typingTexts = ['Frontend-Developer     ', 'Devops Engineer     '];
+
+    // Create a function to display the typing animation for a given text
+    function playTypingAnimation(text) {
+      // Loop through each character and add it to the element
+      for (let i = 0; i < text.length; i++) {
+        setTimeout(() => {
+          typingAnimationElement.textContent += text[i];
+        }, i * 200); // Decreased delay to speed up the typing animation
+      }
+
+      // Once the animation is complete, reset the text and start over
+      setTimeout(() => {
+        typingAnimationElement.textContent = '';
+        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+      }, text.length * 200); // Adjusted delay accordingly
+    }
+
+    // Start the typing animation loop
+    playTypingAnimation(typingTexts[0]);
+  </script>
 
 <script>
     document.getElementById(cert).addEventListener("click",function(){
